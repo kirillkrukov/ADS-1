@@ -8,9 +8,9 @@ int cbinsearch(int* arr, int size, int value) {
         mid = (left + right) / 2;
         if (arr[mid] > value)
             right = mid;
-        if (arr[mid] < value) {
+        if (arr[mid] < value)
             left = mid + 1;
-        } else {
+        if (arr[mid] == value) {
             count = 1;
             break;
         }
